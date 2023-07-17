@@ -80,7 +80,6 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: start;
     right: 0;
     top: 0;
     gap: 1rem;

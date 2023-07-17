@@ -1,0 +1,29 @@
+.tabbar {
+  width: 350px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 20px;
+  background-color: #0e1626;
+  margin-top: 50px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+.tab {
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #767e94;
+  transition: all 0.3s ease;
+}
+
+.tabActive {
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #7c6ef6;
+  color: #ffffff;
+}
