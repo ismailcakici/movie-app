@@ -40,3 +40,59 @@
 .arrow {
   padding-left: 5px;
 }
+
+.menu {
+  display: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #10141f;
+}
+.hamburgerLine {
+  background-color: #767e94;
+  width: 25px;
+  height: 2px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 750px) {
+  .navList {
+    display: none;
+  }
+  .menu {
+    display: grid;
+    z-index: 1;
+    padding: 15px 0;
+    place-items: center;
+    cursor: pointer;
+  }
+
+  .menu:hover {
+    background-color: #191d3f;
+  }
+
+  .header {
+    justify-content: space-between;
+    padding: 0px 2rem;
+  }
+
+  .navListActive {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    right: 0;
+    top: 0;
+    gap: 1rem;
+    padding-top: 100px;
+    width: 250px;
+    height: 100vh;
+    background-color: #20283e;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .navListActive {
+    display: flex;
+  }
+}
