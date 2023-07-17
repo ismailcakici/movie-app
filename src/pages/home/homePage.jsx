@@ -1,4 +1,5 @@
 import { HomePageTitle } from "../../components/homePageTitle/homePageTitle";
+import { MovieCard } from "../../components/movieCard/movieCard";
 import { Search } from "../../components/search/search";
 import TabBar from "../../components/tabbar/tabbar";
 import styles from "./homePage.module.css";
@@ -14,6 +15,7 @@ export default function HomePage() {
       <Search />
       <TabBar />
       <HomePageTitle />
+      <MovieCard />
     </div>
   );
 }
