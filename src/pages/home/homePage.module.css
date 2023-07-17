@@ -1,7 +1,42 @@
 .homePage {
   position: relative;
-  text-align: center;
   display: flex;
+  margin-top: 100px;
+  padding-inline: 370px;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.text {
+  font-size: 62px;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.p {
+  width: 600px;
+  color: #767e94;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .homePage {
+    padding-inline: 100px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .homePage {
+    margin-top: 50px;
+    padding-inline: 10px;
+  }
+
+  .p {
+    width: 400px;
+    text-align: justify;
+  }
+
+  .text {
+    font-size: 46px;
+  }
 }
