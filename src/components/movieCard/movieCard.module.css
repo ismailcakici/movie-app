@@ -4,8 +4,8 @@
   flex-direction: column;
   align-items: center;
   display: flex;
-  width: 280px;
-  height: 480px;
+  width: 230px;
+  height: 400px;
   border-radius: 12px;
   background-color: #2a2a3c;
 }
@@ -17,17 +17,16 @@
 }
 
 .moviePosterBox {
-  width: 266px;
-  height: 400px;
-  border-radius: 12px;
+  width: 216px;
+  height: 330px;
   overflow: hidden;
-  margin-top: 5px;
+  border-radius: 12px;
 }
 
 .moviePoster {
   border-radius: 12px;
-  width: 266px;
-  height: 400px;
+  width: 216px;
+  height: 330px;
   transition: all 0.3s ease;
 }
 
@@ -35,9 +34,9 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  margin-bottom: 3rem;
   margin-left: 1rem;
   color: #ffffff;
+  margin-bottom: 1rem;
   font-size: 14px;
   text-align: center;
   text-overflow: ellipsis;
@@ -68,50 +67,4 @@
   margin-left: 3px;
   font-size: 13px;
   color: #ffad49;
-}
-
-@media only screen and (max-width: 1200px) {
-  .movieCard {
-    width: 250px;
-    height: 430px;
-  }
-
-  .moviePosterBox {
-    width: 236px;
-    height: 350px;
-    margin-top: 5px;
-    overflow: hidden;
-  }
-
-  .moviePoster {
-    width: 246px;
-    height: 370px;
-  }
-
-  .movieTitle {
-    margin-bottom: 2rem;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  .movieCard {
-    width: 230px;
-    height: 400px;
-  }
-
-  .moviePosterBox {
-    width: 216px;
-    height: 330px;
-    margin-top: 5px;
-    overflow: hidden;
-  }
-
-  .moviePoster {
-    width: 236px;
-    height: 360px;
-  }
-
-  .movieTitle {
-    margin-bottom: 2rem;
-  }
 }

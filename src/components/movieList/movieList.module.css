@@ -1,0 +1,8 @@
+.movieListBox {
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-inline: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
