@@ -7,9 +7,9 @@ import { AppLevelContext } from "../../context/appLevelContext";
 
 export default function Header() {
   const [active, setActive] = useState(false);
-  const { handleTrendURL } = useContext(AppLevelContext);
+  const { handleTrendURL, handleSetActive } = useContext(AppLevelContext);
 
-  function handleSetActive() {
+  function handleSetActiveness() {
     setActive(!active);
   }
   return (
@@ -19,7 +19,8 @@ export default function Header() {
         onClick={() => {
           if (active === false) {
             handleTrendURL("all");
-            handleSetActive();
+            handleSetActive(0);
+            handleSetActiveness();
           }
         }}
       >
@@ -31,7 +32,7 @@ export default function Header() {
           to="/moviesPage"
           onClick={() => {
             handleTrendURL("movie");
-            handleSetActive();
+            handleSetActiveness();
           }}
         >
           Movies
@@ -41,7 +42,7 @@ export default function Header() {
           to="/tvShowsPage"
           onClick={() => {
             handleTrendURL("tv");
-            handleSetActive();
+            handleSetActiveness();
           }}
         >
           Tv Shows
@@ -50,7 +51,7 @@ export default function Header() {
           className={styles.navListItem}
           to="/suggestMePage"
           onClick={() => {
-            handleSetActive();
+            handleSetActiveness();
           }}
         >
           <>
@@ -59,7 +60,7 @@ export default function Header() {
           </>
         </Link>
       </ul>
-      <div className={styles.menu} onClick={handleSetActive}>
+      <div className={styles.menu} onClick={handleSetActiveness}>
         <div className={styles.hamburgerLine}></div>
         <div className={styles.hamburgerLine}></div>
         <div className={styles.hamburgerLine}></div>

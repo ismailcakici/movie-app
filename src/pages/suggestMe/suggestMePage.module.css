@@ -1,7 +1,35 @@
 .suggestMePage {
   position: relative;
-  text-align: center;
   display: flex;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  padding-inline: 200px;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.text {
+  font-size: 62px;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .suggestMePage {
+    padding-inline: 60px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .suggestMePage {
+    padding-inline: 10px;
+  }
+  .p {
+    width: 400px;
+    text-align: justify;
+  }
+
+  .text {
+    font-size: 46px;
+  }
 }
