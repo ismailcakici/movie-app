@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: sticky;
   z-index: 1;
@@ -12,12 +12,14 @@
 }
 
 .logo {
+  margin-left: 200px;
   width: 50px;
   height: 50px;
 }
 
 .navList {
   display: flex;
+  margin-right: 200px;
 }
 
 .navListItem {
@@ -55,7 +57,18 @@
   border-radius: 50%;
 }
 
+@media only screen and (max-width: 1200px) {
+  .logo {
+    margin-left: 70px;
+  }
+}
+
 @media only screen and (max-width: 750px) {
+  .logo {
+    margin: 0px;
+    padding: 0px;
+  }
+
   .navList {
     display: none;
   }
