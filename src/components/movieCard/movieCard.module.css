@@ -47,6 +47,7 @@
   border-radius: 15px;
   display: flex;
   justify-content: center;
+  overflow: hidden;
   align-items: center;
   top: 0;
   left: 0;
@@ -60,6 +61,13 @@
 .movieRatingStar {
   width: 13px;
   height: 13px;
+  transition: all 0.3s ease;
+}
+
+.movieCard:hover {
+  .movieRatingStar {
+    transform: scale(1.1);
+  }
 }
 
 .movieRating {

@@ -16,7 +16,7 @@ export const MovieCard = ({ movie }) => {
       <span className={styles.movieTitle}>{movie.title ?? movie.name}</span>
       <div className={styles.movieRatingBox}>
         <img className={styles.movieRatingStar} src={Star} alt="star" />
-        <span className={styles.movieRating}>{Math.round(movie.vote_average)}</span>
+        <span className={styles.movieRating}>{movie.vote_average.toFixed(1)}</span>
       </div>
     </div>
   );
