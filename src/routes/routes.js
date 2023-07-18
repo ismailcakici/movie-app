@@ -2,6 +2,7 @@ import HomePage from "../pages/home/homePage";
 import MoviesPage from "../pages/movies/moviesPage";
 import TvShowsPage from "../pages/tvShows/tvShowsPage";
 import SuggestMePage from "../pages/suggestMe/suggestMePage";
+import { MovieDetail } from "../components/movieDetail/movieDetail";
 
 const routes = [
   {
@@ -23,6 +24,11 @@ const routes = [
     path: "suggestMePage",
     element: <SuggestMePage />,
     title: "suggestMePage",
+  },
+  {
+    path: "movieDetailPage",
+    element: <MovieDetail />,
+    title: "movieDetailPage",
   },
 ];
 
