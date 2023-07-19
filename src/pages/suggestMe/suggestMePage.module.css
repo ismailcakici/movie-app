@@ -5,16 +5,7 @@
   margin-bottom: 10px;
   padding-inline: 200px;
   flex-direction: column;
-  min-height: 100vh;
-}
-
-.movieListBox {
-  gap: 1rem;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  min-height: 30vh;
 }
 
 .text {
@@ -22,30 +13,38 @@
   font-weight: 600;
   padding: 1rem;
 }
+.movieListBox {
+  gap: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-@media only screen and (max-width: 1200px) {
-  .suggestMePage {
-    padding-inline: 60px;
-  }
-
+@media only screen and (min-width: 1200px) {
   .movieListBox {
     margin-inline: 100px;
   }
 }
 
 @media only screen and (max-width: 750px) {
-  .suggestMePage {
-    padding-inline: 0px;
+  .movieListBox {
+    margin-inline: 0px;
   }
-  .p {
-    width: 400px;
-    text-align: justify;
+}
+
+@media only screen and (max-width: 1200px) {
+  .suggestMePage {
+    padding-inline: 60px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .suggestMePage {
+    padding-inline: 10px;
   }
 
   .text {
     font-size: 46px;
-  }
-  .movieListBox {
-    margin-inline: 0px;
   }
 }

@@ -143,11 +143,14 @@
     height: auto;
   }
 
+  .movieTitle {
+    font-size: 20px;
+  }
   .titleBox {
     bottom: -30px;
     left: 5px;
     width: 250px;
-    padding: 1rem;
+    text-overflow: ellipsis;
   }
 
   .posterImage {
