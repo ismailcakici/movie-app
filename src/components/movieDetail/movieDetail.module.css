@@ -3,19 +3,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 .backdropImage {
   width: 1200px;
-  height: auto;
+  height: 500px;
+  object-fit: cover;
   mix-blend-mode: exclusion;
   border-radius: 40px;
 }
 
 .posterImage {
-  width: 400px;
   border-radius: 15px;
-  height: auto;
 }
 
 .titles {
@@ -59,8 +60,10 @@
 
 .overViewBox {
   display: flex;
+  width: 600px;
   flex-direction: column;
-  width: 500px;
+  margin-inline: 2rem;
+  padding: 2rem;
   gap: 10px;
 }
 
@@ -91,4 +94,66 @@
   margin-left: 3px;
   font-size: 13px;
   color: #ffad49;
+}
+
+@media only screen and (max-width: 1300px) {
+  .backdropImage {
+    width: 900px;
+    height: 300px;
+  }
+
+  .titleBox {
+    bottom: -40px;
+    left: 50px;
+    width: 600px;
+  }
+
+  .posterImage {
+    width: 350px;
+    height: auto;
+    border-radius: 15px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .backdropImage {
+    width: 600px;
+    height: 300px;
+  }
+
+  .titleBox {
+    bottom: -20px;
+    left: 30px;
+    width: 400px;
+    padding: 1.5rem;
+  }
+
+  .posterImage {
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .backdropImage {
+    width: 430px;
+    height: auto;
+  }
+
+  .titleBox {
+    bottom: -20px;
+    left: 5px;
+    width: 420px;
+    padding: 1.5rem;
+  }
+
+  .posterImage {
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+  }
+  .overViewBox {
+    width: 350px;
+  }
 }
