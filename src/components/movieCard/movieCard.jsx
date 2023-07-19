@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const posterURL = "https://image.tmdb.org/t/p/w500";
 
-export const MovieCard = ({ movie }) => {
+export const MovieCard = ({ movie, fromSuggestPage }) => {
   const { handleSetMovieDetail } = useContext(AppLevelContext);
 
   return (
@@ -14,7 +14,7 @@ export const MovieCard = ({ movie }) => {
       className={styles.movieCard}
       to="/movieDetailPage"
       onClick={() => {
-        handleSetMovieDetail(movie.id, movie.media_type);
+        handleSetMovieDetail(movie.id, fromSuggestPage ? "movie" : movie.media_type);
       }}
     >
       <div className={styles.moviePosterBox}>

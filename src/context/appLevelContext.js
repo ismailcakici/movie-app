@@ -11,6 +11,7 @@ export const AppLevelProvider = ({ children }) => {
   const [active, setActive] = useState(0);
   const [searchValue, setSearchValue] = useState("");
   const [filteredData, setFilteredData] = useState([]);
+  const [suggest, setSuggest] = useState([]);
   const [trends, setTrends] = useState([]);
   const [trendURL, setTrendURL] = useState("all");
   const [movieDetail, setMovieDetail] = useState(null);
@@ -22,6 +23,13 @@ export const AppLevelProvider = ({ children }) => {
       setTrends(response.data.results);
     });
   }, [trendURL]);
+
+  function handleSetSuggest(query) {
+    axios.get(`${url}/search/movie?query=${query}&api_key=${apiKey}`).then((response) => {
+      setSuggest(response.data.results);
+      console.log(suggest);
+    });
+  }
 
   async function handleSetMovieDetail(movieId, mediaType) {
     setLoading(true);
@@ -66,6 +74,8 @@ export const AppLevelProvider = ({ children }) => {
         setTrends,
         movieDetail,
         handleSetMovieDetail,
+        handleSetSuggest,
+        suggest,
         loading,
         tvOrMovie,
       }}

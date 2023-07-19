@@ -5,7 +5,16 @@
   margin-bottom: 10px;
   padding-inline: 200px;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 40vh;
+}
+
+.movieListBox {
+  gap: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .text {
@@ -17,6 +26,10 @@
 @media only screen and (max-width: 1200px) {
   .suggestMePage {
     padding-inline: 60px;
+  }
+
+  .movieListBox {
+    margin-inline: 100px;
   }
 }
 
@@ -31,5 +44,8 @@
 
   .text {
     font-size: 46px;
+  }
+  .movieListBox {
+    margin-inline: 0px;
   }
 }
