@@ -11,3 +11,9 @@
     margin-inline: 100px;
   }
 }
+
+@media only screen and (max-width: 750px) {
+  .movieListBox {
+    margin-inline: 0px;
+  }
+}

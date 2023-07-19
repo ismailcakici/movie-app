@@ -13,7 +13,7 @@ export default function SuggestMe() {
       <input
         className={styleSearch.search}
         type="text"
-        placeholder="Search movies or tv shows for suggest me"
+        placeholder="Search movies for suggest me"
         onKeyDown={(e) => {
           if (e.key === "Enter") {
             handleSetSuggest(e.target.value);

@@ -28,10 +28,10 @@
 
 @media only screen and (max-width: 750px) {
   .homePage {
-    padding-inline: 10px;
+    padding-inline: 0px;
   }
   .p {
-    width: 400px;
+    width: 350px;
     text-align: justify;
   }
 

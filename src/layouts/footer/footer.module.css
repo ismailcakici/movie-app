@@ -21,7 +21,7 @@
   color: #767e94;
   text-align: center;
   flex-wrap: wrap;
-  padding: 1rem;
+  padding-inline: 1.5rem;
   min-width: 300px;
   max-width: 550px;
 }

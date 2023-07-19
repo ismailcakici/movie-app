@@ -2,11 +2,18 @@ import { useContext } from "react";
 import { AppLevelContext } from "../../context/appLevelContext";
 import Star from "../../assets/images/star.png";
 import styles from "./movieDetail.module.css";
+import LoadingSpinner from "../../components/loadingSpinner/loadingSpinner";
 
 export const MovieDetail = () => {
   const { movieDetail, loading, tvOrMovie } = useContext(AppLevelContext);
 
-  if (loading === false) {
+  if (loading === true) {
+    return (
+      <div className={styles.loadingDiv}>
+        <LoadingSpinner />
+      </div>
+    );
+  } else {
     return (
       <>
         <div className={styles.movieDetailBody}>
@@ -73,7 +80,5 @@ export const MovieDetail = () => {
         </div>
       </>
     );
-  } else {
-    return <div>Loading...</div>;
   }
 };

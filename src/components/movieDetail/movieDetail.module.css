@@ -137,15 +137,15 @@
 
 @media only screen and (max-width: 750px) {
   .backdropImage {
-    width: 430px;
+    width: 300px;
     height: auto;
   }
 
   .titleBox {
-    bottom: -20px;
+    bottom: -30px;
     left: 5px;
-    width: 420px;
-    padding: 1.5rem;
+    width: 250px;
+    padding: 1rem;
   }
 
   .posterImage {
@@ -154,6 +154,11 @@
     border-radius: 15px;
   }
   .overViewBox {
-    width: 350px;
+    width: 100vw;
+    margin-inline: 0px;
+  }
+
+  .contentBox {
+    padding-inline: 0px;
   }
 }

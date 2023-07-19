@@ -114,17 +114,17 @@
 
 @media only screen and (max-width: 750px) {
   .movieCard {
-    width: 200px;
+    width: 170px;
     height: 320px;
   }
 
   .moviePosterBox {
-    width: 176px;
+    width: 156px;
     height: 250px;
   }
 
   .moviePoster {
-    width: 180px;
+    width: 160px;
     height: auto;
   }
 }

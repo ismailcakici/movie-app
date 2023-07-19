@@ -26,3 +26,9 @@
   background-color: #7c6ef6;
   color: #ffffff;
 }
+
+@media only screen and (max-width: 750px) {
+  .tabbar {
+    width: 300px;
+  }
+}

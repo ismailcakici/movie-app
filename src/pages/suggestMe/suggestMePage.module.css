@@ -5,7 +5,7 @@
   margin-bottom: 10px;
   padding-inline: 200px;
   flex-direction: column;
-  min-height: 40vh;
+  min-height: 100vh;
 }
 
 .movieListBox {
@@ -35,7 +35,7 @@
 
 @media only screen and (max-width: 750px) {
   .suggestMePage {
-    padding-inline: 10px;
+    padding-inline: 0px;
   }
   .p {
     width: 400px;
