@@ -14,7 +14,7 @@ export const MovieCard = ({ movie }) => {
       className={styles.movieCard}
       to="/movieDetailPage"
       onClick={() => {
-        handleSetMovieDetail(movie.id);
+        handleSetMovieDetail(movie.id, movie.media_type);
       }}
     >
       <div className={styles.moviePosterBox}>

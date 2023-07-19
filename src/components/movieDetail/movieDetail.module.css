@@ -1,0 +1,94 @@
+.movieDetailBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.backdropImage {
+  width: 1200px;
+  height: auto;
+  mix-blend-mode: exclusion;
+  border-radius: 40px;
+}
+
+.posterImage {
+  width: 400px;
+  border-radius: 15px;
+  height: auto;
+}
+
+.titles {
+  color: #8e95a9;
+}
+
+.imageTitleBox {
+  position: relative;
+}
+
+.titleBox {
+  position: absolute;
+  bottom: -30px;
+  left: 70px;
+  background-color: rgba(18, 24, 41, 0.7);
+  backdrop-filter: blur(5px);
+  border-radius: 30px;
+  padding: 2rem;
+  width: 800px;
+}
+
+.mediaType {
+  color: #beb7fb;
+}
+
+.contentBox {
+  display: flex;
+  padding-inline: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  text-align: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+}
+
+.movieOverView {
+  color: #8e95a9;
+}
+
+.overViewBox {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 10px;
+}
+
+.genresBox {
+  display: flex;
+  gap: 1rem;
+}
+
+.movieRatingBox {
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+  width: 63px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+}
+
+.movieRatingStar {
+  width: 13px;
+  height: 13px;
+}
+
+.movieRating {
+  margin-top: 2px;
+  margin-left: 3px;
+  font-size: 13px;
+  color: #ffad49;
+}

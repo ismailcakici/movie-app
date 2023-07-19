@@ -15,6 +15,7 @@ export const AppLevelProvider = ({ children }) => {
   const [trendURL, setTrendURL] = useState("all");
   const [movieDetail, setMovieDetail] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [tvOrMovie, setTvOrMovie] = useState(null);
 
   useEffect(() => {
     axios.get(`${url}/trending/${trendURL}/day?api_key=${apiKey}`).then((response) => {
@@ -22,10 +23,11 @@ export const AppLevelProvider = ({ children }) => {
     });
   }, [trendURL]);
 
-  async function handleSetMovieDetail(movieId) {
+  async function handleSetMovieDetail(movieId, mediaType) {
     setLoading(true);
-    await axios.get(`${url}/movie/${movieId}?api_key=${apiKey}`).then((response) => {
+    await axios.get(`${url}/${mediaType}/${movieId}?api_key=${apiKey}`).then((response) => {
       setMovieDetail(response.data);
+      setTvOrMovie(mediaType);
     });
     setLoading(false);
   }
@@ -65,6 +67,7 @@ export const AppLevelProvider = ({ children }) => {
         movieDetail,
         handleSetMovieDetail,
         loading,
+        tvOrMovie,
       }}
     >
       {children}

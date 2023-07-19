@@ -27,7 +27,7 @@
 .moviePoster {
   border-radius: 12px;
   width: 260px;
-  height: 390px;
+  height: auto;
   transition: all 0.3s ease;
 }
 
@@ -65,17 +65,17 @@
   transition: all 0.3s ease;
 }
 
-.movieCard:hover {
-  .movieRatingStar {
-    transform: scale(1.1);
-  }
-}
-
 .movieRating {
   margin-top: 3px;
   margin-left: 3px;
   font-size: 13px;
   color: #ffad49;
+}
+
+.movieCard:hover {
+  .movieRatingStar {
+    transform: scale(1.1);
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -91,7 +91,7 @@
 
   .moviePoster {
     width: 220px;
-    height: 350px;
+    height: auto;
   }
 }
 
@@ -108,7 +108,7 @@
 
   .moviePoster {
     width: 200px;
-    height: 330px;
+    height: auto;
   }
 }
 
@@ -125,6 +125,6 @@
 
   .moviePoster {
     width: 180px;
-    height: 310px;
+    height: auto;
   }
 }
