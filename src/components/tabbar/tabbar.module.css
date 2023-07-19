@@ -1,3 +1,5 @@
+@import "../../constants.css";
+
 .tabbar {
   width: 350px;
   height: 50px;
@@ -5,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   padding-inline: 20px;
-  background-color: #0e1626;
+  background-color: var(--color-background4);
   margin-top: 50px;
   margin-left: 15px;
   border-radius: 10px;
@@ -15,7 +17,7 @@
   border-radius: 12px;
   font-weight: 600;
   cursor: pointer;
-  color: #767e94;
+  color: var(--color-grey);
 }
 
 .tabActive {
@@ -23,8 +25,8 @@
   border-radius: 12px;
   font-weight: 600;
   cursor: pointer;
-  background-color: #7c6ef6;
-  color: #ffffff;
+  background-color: var(--color-tabActive);
+  color: var(--color-white);
 }
 
 @media only screen and (max-width: 750px) {

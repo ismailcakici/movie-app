@@ -1,3 +1,5 @@
+@import "../../constants.css";
+
 .homePage {
   position: relative;
   display: flex;
@@ -16,7 +18,7 @@
 
 .p {
   width: 600px;
-  color: #767e94;
+  color: var(--color-grey);
   padding: 1rem;
 }
 

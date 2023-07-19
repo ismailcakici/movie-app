@@ -1,6 +1,8 @@
+@import "../../constants.css";
+
 .homePageTitle {
   font-size: 28px;
-  color: #767e94;
   font-weight: 600;
-  margin: 1rem;
+  padding: 1rem;
+  color: var(--color-grey);
 }

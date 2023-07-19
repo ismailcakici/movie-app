@@ -1,3 +1,5 @@
+@import "../../constants.css";
+
 .movieDetailBody {
   display: flex;
   flex-direction: column;
@@ -20,7 +22,7 @@
 }
 
 .titles {
-  color: #8e95a9;
+  color: var(--color-titleColor);
 }
 
 .imageTitleBox {
@@ -39,7 +41,7 @@
 }
 
 .mediaType {
-  color: #beb7fb;
+  color: var(--color-mediaType);
 }
 
 .contentBox {
@@ -55,7 +57,7 @@
 }
 
 .movieOverView {
-  color: #8e95a9;
+  color: var(--color-titleColor);
 }
 
 .overViewBox {
@@ -93,7 +95,7 @@
   margin-top: 2px;
   margin-left: 3px;
   font-size: 13px;
-  color: #ffad49;
+  color: var(--color-warning);
 }
 
 @media only screen and (max-width: 1300px) {

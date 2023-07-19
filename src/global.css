@@ -1,16 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-
-:root {
-  --color-primary: #5a4af4;
-  --color-secondary: #1ea5fc;
-  --color-tertiary: #b66dff;
-  --color-succes: #05ce91;
-  --color-error: #ff6161;
-  --color-warning: #ffad49;
-  --color-background: #121829;
-  --color-white: #ffffff;
-  --color-grey: #767e94;
-}
+@import "constants.css";
 
 * {
   padding: 0;

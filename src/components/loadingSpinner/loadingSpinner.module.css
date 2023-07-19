@@ -1,3 +1,5 @@
+@import "../../constants.css";
+
 @keyframes spinner {
   0% {
     transform: rotate(0deg);
@@ -9,10 +11,10 @@
 .loadingSpinner {
   width: 50px;
   height: 50px;
-  border: 10px solid #ffffff;
-  border-top: 10px solid #1ea5fc;
   border-radius: 50%;
   animation: spinner 1.5s linear infinite;
+  border: 10px solid var(--color-white);
+  border-top: 10px solid var(--color-secondary);
 }
 
 .spinnerContainer {

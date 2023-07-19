@@ -1,6 +1,7 @@
+@import "../../constants.css";
 .footer {
   position: relative;
-  background: #121829;
+  background: var(--color-background);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,7 +19,7 @@
 }
 
 .span {
-  color: #767e94;
+  color: var(--color-grey);
   text-align: center;
   flex-wrap: wrap;
   padding-inline: 1.5rem;

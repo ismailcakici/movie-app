@@ -1,3 +1,4 @@
+@import "../../constants.css";
 .header {
   display: flex;
   justify-content: space-around;
@@ -27,11 +28,11 @@
   margin: 0 20px;
   display: flex;
   font-weight: bold;
-  color: #767e94;
+  color: var(--color-grey);
 }
 
 .navListItem:hover {
-  color: #5a4af4;
+  color: var(--color-primary);
   .arrow {
     filter: invert(34%) sepia(94%) saturate(5466%) hue-rotate(241deg) brightness(98%) contrast(95%);
   }
@@ -46,10 +47,10 @@
   width: 50px;
   height: 50px;
   border-radius: 10px;
-  background-color: #10141f;
+  background-color: var(--color-menuBackground);
 }
 .hamburgerLine {
-  background-color: #767e94;
+  background-color: var(--color-grey);
   width: 25px;
   height: 2px;
   border-radius: 50%;
@@ -68,7 +69,7 @@
   }
 
   .menu:hover {
-    background-color: #191d3f;
+    background-color: var(--color-menuHover);
   }
 
   .header {
@@ -86,7 +87,7 @@
     padding-top: 100px;
     width: 250px;
     height: 100vh;
-    background-color: #20283e;
+    background-color: var(--color-navListActive);
   }
 }
 
