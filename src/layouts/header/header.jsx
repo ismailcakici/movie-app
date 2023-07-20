@@ -6,18 +6,21 @@ import { useContext, useState } from "react";
 import { AppLevelContext } from "../../context/appLevelContext";
 
 export default function Header() {
-  const [active, setActive] = useState(false);
-  const { handleTrendURL, handleSetActive } = useContext(AppLevelContext);
+  const [navActive, navSetActive] = useState(false);
+  const { handleTrendURL, handleSetActive, setSuggest } = useContext(AppLevelContext);
 
   function handleSetActiveness() {
-    setActive(!active);
+    navSetActive(!navActive);
+  }
+  function handleSetSuggestMe() {
+    setSuggest([]);
   }
   return (
     <div className={styles.header}>
       <Link
         to="/"
         onClick={() => {
-          if (active === false) {
+          if (navActive === false) {
             handleTrendURL("all");
             handleSetActive(0);
             handleSetActiveness();
@@ -26,7 +29,7 @@ export default function Header() {
       >
         <img className={styles.logo} src={Logo} alt="logo" />
       </Link>
-      <ul className={active ? styles.navListActive : styles.navList}>
+      <ul className={navActive ? styles.navListActive : styles.navList}>
         <Link
           className={styles.navListItem}
           to="/moviesPage"
@@ -51,6 +54,7 @@ export default function Header() {
           className={styles.navListItem}
           to="/suggestMePage"
           onClick={() => {
+            handleSetSuggestMe();
             handleSetActiveness();
           }}
         >

@@ -27,7 +27,6 @@ export const AppLevelProvider = ({ children }) => {
   function handleSetSuggest(query) {
     axios.get(`${url}/search/movie?query=${query}&api_key=${apiKey}`).then((response) => {
       setSuggest(response.data.results);
-      console.log(suggest);
     });
   }
 
@@ -76,6 +75,7 @@ export const AppLevelProvider = ({ children }) => {
         handleSetMovieDetail,
         handleSetSuggest,
         suggest,
+        setSuggest,
         loading,
         tvOrMovie,
       }}
